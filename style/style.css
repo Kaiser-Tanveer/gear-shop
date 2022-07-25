@@ -40,6 +40,10 @@ nav{
     font-weight: 700;
 }
 
+.name .bar,.cart{
+    display: none;
+}
+
 .menu{
     margin-right: 120px;
 }
@@ -218,8 +222,7 @@ Featured Products style
 -------------- */
 
 .featured-products{
-    width: 
-    80%;
+    width: 80%;
     margin: auto;
     padding-bottom: 100px;
 }
@@ -281,4 +284,96 @@ footer{
 .footer-icons .link{
     margin: 0 8px;
     padding-top: 12px;
+}
+
+
+
+
+
+/* --------------
+    Media query
+-------------- */
+
+/* --------------
+    Mobile Style
+-------------- */
+@media only screen and (max-width: 688px) {
+
+main{
+    max-width: 100%;
+}
+
+
+.name{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav p, i{
+    padding: 0 10px;
+}
+
+.name .bar,.cart{
+    display: block;
+    flex-direction: column;
+}
+
+.menu{
+    margin: 0;
+    flex-direction: column;
+    display: none;
+}
+
+.top-bar{
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+.top-bar .right-bar img{
+    width: 100%;
+}
+
+.top-bar .left-bar{
+    padding: 20px 0;
+    margin-left: 10px;
+}
+
+.online-shop{
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+
+
+.popular-collection{
+    padding: 80px 0;
+}
+
+.collection-container{
+    grid-template-columns: 1fr;
+}
+
+.featured-products{
+    width: 100%;
+}
+
+.products{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.products-banner img{
+    width: 100%;
+}
+
+.product-details{
+    margin-left: 10px;
+}
+
+footer{
+    width: 100%;
+}
+
 }
